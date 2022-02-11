@@ -20,3 +20,34 @@
     scroll-behavior: smooth;
     /* when scrolling will happen it should have smooth effect */
 }
+
+
+/* style the menu section */
+
+.header {
+    position: fixed;
+    /* it will make the menu fixed if you are scrolling down through the page */
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgb(70, 167, 70);
+    height: 65px;
+    z-index: 100;
+    /* header should always raised like a 3D view */
+}
+
+.header .nav-bar {
+    display: flex;
+    /* making it flex container will help us move items inside it */
+}
+
+.header .nav-bar a {
+    flex: 1;
+    /* every anchor tag should take equal space in the whole row */
+    text-align: center;
+    /* algin the text inside every anchor to horizontally center */
+    font-size: 22px;
+    line-height: 65px;
+    /* space between two lines, also helps to align element vertically center */
+    color: aliceblue;
+}
