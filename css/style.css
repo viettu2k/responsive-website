@@ -51,3 +51,33 @@
     /* space between two lines, also helps to align element vertically center */
     color: aliceblue;
 }
+
+
+/* apply pseudo selector hover and change the brightness */
+
+.header .nav-bar a:hover {
+    filter: brightness(0.8);
+}
+
+
+/* apply different background color on each anchor menu item */
+
+.header .nav-bar a:nth-child(1) {
+    background: rgb(224, 27, 27);
+}
+
+.header .nav-bar a:nth-child(2) {
+    background: rgb(27, 224, 86);
+}
+
+.header .nav-bar a:nth-child(3) {
+    background: rgb(27, 211, 224);
+}
+
+.header .nav-bar a:nth-child(4) {
+    background: rgb(194, 224, 27);
+}
+
+.header .nav-bar a:nth-child(5) {
+    background: rgb(145, 27, 224);
+}
