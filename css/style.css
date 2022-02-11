@@ -8,17 +8,17 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    /* avoids the box-model issue and make sure the width of the container you provide does not get stretched if you add margin padding border to the container */
+    /* avoids the box-model issue and makes sure the width of the container you provide does not get streched if you add margin padding border to the container */
     outline: none;
     border: none;
     text-decoration: none;
-    /* remove under from anchor tag */
+    /*removes underline from anchor tag*/
     text-transform: capitalize;
-    /* make the 1st letter to be capital */
+    /* make the 1st letter to be capital*/
     overflow: hidden;
-    /* clip off the extra text which is going out of the box */
+    /*clip off the extra text which is going out of the box*/
     scroll-behavior: smooth;
-    /* when scrolling will happen it should have smooth effect */
+    /*when scrolling will happen it should have smooth effect*/
 }
 
 
@@ -26,34 +26,34 @@
 
 .header {
     position: fixed;
-    /* it will make the menu fixed if you are scrolling down through the page */
+    /*it will make the menu fixed if you are scrolling down through the page*/
     top: 0;
     left: 0;
     right: 0;
-    background: rgb(70, 167, 70);
+    /* background: rgb(64, 160, 64); */
     height: 65px;
     z-index: 100;
-    /* header should always raised like a 3D view */
+    /*header menu items should be always raised like a 3D view*/
 }
 
 .header .nav-bar {
     display: flex;
-    /* making it flex container will help us move items inside it */
+    /*making it flex container will help us move items inside it*/
 }
 
 .header .nav-bar a {
     flex: 1;
-    /* every anchor tag should take equal space in the whole row */
+    /*every anchor tag should take equal space in the whole row*/
     text-align: center;
-    /* algin the text inside every anchor to horizontally center */
+    /*align the text inside every anchor to horizontally center*/
     font-size: 22px;
     line-height: 65px;
-    /* space between two lines, also helps to align element vertically center */
+    /*space between two lines, also helps to align element vertically center*/
     color: aliceblue;
 }
 
 
-/* apply pseudo selector hover and change the brightness */
+/* apply pseudo selector hover and change the brightness*/
 
 .header .nav-bar a:hover {
     filter: brightness(0.8);
@@ -63,21 +63,47 @@
 /* apply different background color on each anchor menu item */
 
 .header .nav-bar a:nth-child(1) {
-    background: rgb(224, 27, 27);
+    background: #db1616;
 }
 
 .header .nav-bar a:nth-child(2) {
-    background: rgb(27, 224, 86);
+    background: #16db78;
 }
 
 .header .nav-bar a:nth-child(3) {
-    background: rgb(27, 211, 224);
+    background: #6013a8;
 }
 
 .header .nav-bar a:nth-child(4) {
-    background: rgb(194, 224, 27);
+    background: #d35913;
 }
 
 .header .nav-bar a:nth-child(5) {
-    background: rgb(145, 27, 224);
+    background: #14ccec;
+}
+
+
+/* Style the main body section */
+
+.container {
+    display: flex;
+    width: 500%;
+    height: 100vh;
+    /*this will occupy visible screen height*/
+}
+
+.container .main-section {
+    display: flex;
+    width: 20%;
+    height: 100%;
+    align-items: center;
+    /*aligns the content vertically center*/
+    justify-content: center;
+    /*aligns the content horizontally center*/
+    font-size: 8vw;
+    /*8 of the total view width*/
+    letter-spacing: 0.5rem;
+    /*space between the letters in a word*/
+    text-transform: uppercase;
+    font-weight: bold;
 }
