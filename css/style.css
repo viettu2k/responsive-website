@@ -1,0 +1,22 @@
+/* Alternative way of importing another style or css in your current css file, other options is to add it as a link style sheet in your html */
+
+
+/* Apply below style to all elements in the page */
+
+* {
+    font-family: "Raleway", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* avoids the box-model issue and make sure the width of the container you provide does not get stretched if you add margin padding border to the container */
+    outline: none;
+    border: none;
+    text-decoration: none;
+    /* remove under from anchor tag */
+    text-transform: capitalize;
+    /* make the 1st letter to be capital */
+    overflow: hidden;
+    /* clip off the extra text which is going out of the box */
+    scroll-behavior: smooth;
+    /* when scrolling will happen it should have smooth effect */
+}
